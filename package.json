@@ -1,0 +1,21 @@
+{
+  "name": "tabib-herbs",
+  "version": "1.0.0",
+  "description": "website for Tabib Herbs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "keywords": [
+    "website",
+    "htm",
+    "css",
+    "js"
+  ],
+  "author": "Mohammad Maasir",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
