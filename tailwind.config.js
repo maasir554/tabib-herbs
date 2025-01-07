@@ -5,8 +5,12 @@ module.exports = {
     extend: {
       colors:{
         'primary': '#297345',
-        'secondary': '#7DC11B'
-      }
+        'secondary': '#7DC11B',
+        'tertiary': '#F3A333',
+      },
+    fontFamily:{
+      "merriweather":["Merriweather", 'serif'],
+    },
     },
   },
   plugins: [],
