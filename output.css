@@ -875,6 +875,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .border-2{
   border-width: 2px;
 }
@@ -1246,6 +1250,10 @@ body{
 
   .md\:rounded-2xl{
     border-radius: 1rem;
+  }
+
+  .md\:rounded-3xl{
+    border-radius: 1.5rem;
   }
 
   .md\:p-5{
