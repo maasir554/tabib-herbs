@@ -38,3 +38,21 @@ window.addEventListener('resize', () => {
       toggleMenu();
     }
 })
+
+
+const whatsAppForm = document.querySelector('#whatsapp-form');
+
+const submitButton = document.querySelector('#submit-form');
+
+submitButton.addEventListener('click', (event) => {
+    event.preventDefault();    
+    const formData = new FormData(whatsAppForm);
+
+    const whatsAppMessageRaw = 
+                            `Name: ${formData.get('fullname')}\nEmail: ${formData.get('email')}\nPhone_number: ${formData.get('phone')}\nCity: ${formData.get('city')}\nMessage: ${formData.get('message')}`;
+
+    const whatsAppMessage = encodeURIComponent(whatsAppMessageRaw);
+    
+    window.open(`https://wa.me/919131355378?text=${whatsAppMessage}`, '_blank');
+});
+

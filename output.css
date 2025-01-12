@@ -724,6 +724,14 @@ video {
   max-width: 36rem;
 }
 
+.max-w-lg{
+  max-width: 32rem;
+}
+
+.max-w-md{
+  max-width: 28rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1089,6 +1097,10 @@ body{
   background-color: rgb(243 163 51 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-secondary\/90:hover{
+  background-color: rgb(125 193 27 / 0.9);
+}
+
 .hover\:text-secondary:hover{
   --tw-text-opacity: 1;
   color: rgb(125 193 27 / var(--tw-text-opacity, 1));
@@ -1231,5 +1243,10 @@ body{
   .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
