@@ -859,6 +859,10 @@ video {
   white-space: nowrap;
 }
 
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .rounded-\[100\%\]{
   border-radius: 100%;
 }
@@ -873,10 +877,6 @@ video {
 
 .rounded-xl{
   border-radius: 0.75rem;
-}
-
-.rounded-2xl{
-  border-radius: 1rem;
 }
 
 .border-2{
@@ -1123,6 +1123,7 @@ video {
 }
 
 body{
+  height: 100%;
   width: 100%;
 }
 
@@ -1246,10 +1247,6 @@ body{
 
   .md\:gap-5{
     gap: 1.25rem;
-  }
-
-  .md\:rounded-2xl{
-    border-radius: 1rem;
   }
 
   .md\:rounded-3xl{
