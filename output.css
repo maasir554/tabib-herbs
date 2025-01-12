@@ -568,8 +568,16 @@ video {
   position: relative;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .left-0{
   left: 0px;
+}
+
+.left-1\/2{
+  left: 50%;
 }
 
 .right-0{
@@ -584,8 +592,8 @@ video {
   top: 50%;
 }
 
-.bottom-0{
-  bottom: 0px;
+.z-10{
+  z-index: 10;
 }
 
 .z-40{
@@ -616,8 +624,8 @@ video {
   height: 0.25rem;
 }
 
-.h-1\/3{
-  height: 33.333333%;
+.h-1\/6{
+  height: 16.666667%;
 }
 
 .h-14{
@@ -626,6 +634,10 @@ video {
 
 .h-16{
   height: 4rem;
+}
+
+.h-\[25px\]{
+  height: 25px;
 }
 
 .h-\[500px\]{
@@ -648,36 +660,32 @@ video {
   height: 100vh;
 }
 
-.h-1\/4{
-  height: 25%;
-}
-
-.h-1\/2{
-  height: 50%;
-}
-
-.h-\[30px\]{
-  height: 30px;
-}
-
-.h-\[20px\]{
-  height: 20px;
-}
-
-.h-\[25px\]{
-  height: 25px;
-}
-
 .min-h-screen{
   min-height: 100vh;
+}
+
+.w-2{
+  width: 0.5rem;
+}
+
+.w-2\/5{
+  width: 40%;
 }
 
 .w-\[120px\]{
   width: 120px;
 }
 
+.w-\[30px\]{
+  width: 30px;
+}
+
 .w-\[400px\]{
   width: 400px;
+}
+
+.w-\[5\%\]{
+  width: 5%;
 }
 
 .w-\[75px\]{
@@ -696,20 +704,16 @@ video {
   width: 100vw;
 }
 
-.w-\[50px\]{
-  width: 50px;
-}
-
-.w-\[30px\]{
-  width: 30px;
-}
-
-.w-\[20px\]{
-  width: 20px;
-}
-
 .min-w-\[140px\]{
   min-width: 140px;
+}
+
+.min-w-\[35px\]{
+  min-width: 35px;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
 }
 
 .max-w-4xl{
@@ -720,16 +724,16 @@ video {
   max-width: 500px;
 }
 
-.max-w-xl{
-  max-width: 36rem;
-}
-
-.max-w-lg{
-  max-width: 32rem;
+.max-w-\[80px\]{
+  max-width: 80px;
 }
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-xl{
+  max-width: 36rem;
 }
 
 .flex-1{
@@ -741,6 +745,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-translate-x-full{
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -748,6 +757,11 @@ video {
 
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-1\/2{
+  --tw-translate-y: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -813,6 +827,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -829,12 +847,20 @@ video {
   gap: 2rem;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .scroll-smooth{
   scroll-behavior: smooth;
 }
 
 .whitespace-nowrap{
   white-space: nowrap;
+}
+
+.rounded-\[100\%\]{
+  border-radius: 100%;
 }
 
 .rounded-full{
@@ -853,8 +879,16 @@ video {
   border-width: 2px;
 }
 
+.border-4{
+  border-width: 4px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
+}
+
+.border-t-2{
+  border-top-width: 2px;
 }
 
 .border-primary{
@@ -889,6 +923,30 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[url\(\'\/assets\/carousel\/femo-tabib\.jpg\'\)\]{
+  background-image: url('/assets/carousel/femo-tabib.jpg');
+}
+
+.bg-\[url\(\'\/assets\/carousel\/hazim-tabib\.jpg\'\)\]{
+  background-image: url('/assets/carousel/hazim-tabib.jpg');
+}
+
+.bg-\[url\(\'\/assets\/carousel\/health-tabib\.jpg\'\)\]{
+  background-image: url('/assets/carousel/health-tabib.jpg');
+}
+
+.bg-\[url\(\'\/assets\/carousel\/livo-tabib\.jpg\'\)\]{
+  background-image: url('/assets/carousel/livo-tabib.jpg');
+}
+
+.bg-\[url\(\'\/assets\/carousel\/skin-tabib\.jpg\'\)\]{
+  background-image: url('/assets/carousel/skin-tabib.jpg');
+}
+
+.bg-cover{
+  background-size: cover;
 }
 
 .p-5{
@@ -1046,16 +1104,16 @@ video {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.transition-transform{
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform{
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1066,6 +1124,11 @@ body{
 
 *{
   scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet-active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 115 69 / var(--tw-bg-opacity, 1));
 }
 
 .placeholder\:text-lg::-moz-placeholder{
@@ -1088,13 +1151,13 @@ body{
   color: rgb(82 82 82 / var(--tw-text-opacity, 1));
 }
 
-.hover\:bg-primary\/90:hover{
-  background-color: rgb(41 115 69 / 0.9);
+.hover\:border-secondary:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(125 193 27 / var(--tw-border-opacity, 1));
 }
 
-.hover\:bg-tertiary:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 163 51 / var(--tw-bg-opacity, 1));
+.hover\:bg-primary\/90:hover{
+  background-color: rgb(41 115 69 / 0.9);
 }
 
 .hover\:bg-secondary\/90:hover{
@@ -1115,6 +1178,20 @@ body{
 .active\:text-tertiary:active{
   --tw-text-opacity: 1;
   color: rgb(243 163 51 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 640px){
+  .sm\:w-3{
+    width: 0.75rem;
+  }
+
+  .sm\:gap-3{
+    gap: 0.75rem;
+  }
+
+  .sm\:gap-4{
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -1138,6 +1215,10 @@ body{
     height: 80px;
   }
 
+  .md\:w-4{
+    width: 1rem;
+  }
+
   .md\:w-\[100px\]{
     width: 100px;
   }
@@ -1153,6 +1234,18 @@ body{
   .md\:-translate-y-\[5\%\]{
     --tw-translate-y: -5%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .md\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .md\:rounded-2xl{
+    border-radius: 1rem;
   }
 
   .md\:p-5{
@@ -1235,6 +1328,11 @@ body{
 }
 
 @media (min-width: 1280px){
+  .xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .xl\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -1243,10 +1341,5 @@ body{
   .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .xl\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }

@@ -10,3 +10,7 @@ body{
  *{
     scroll-behavior: smooth;
  }
+
+.swiper-pagination-bullet-active{
+    @apply bg-primary;
+}
