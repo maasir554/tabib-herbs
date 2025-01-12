@@ -6,7 +6,7 @@
     <title>Tabib Herbs</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="font-merriweather">
+<body class="font-merriweather scroll-smooth">
     <nav class="fixed top-0 left-0 right-0 h-16 md:h-24 bg-white backdrop-blur-md flex flex-row items-center justify-between px-5 md:px-10 border-b-2 border-primary">
         
         <span class="h-full flex py-4 md:p-5 md:-translate-y-[5%]">
@@ -41,7 +41,7 @@
                 <div class="flex flex-col justify-center items-center gap-2 w-full">
                     <a 
                     class="flex items-center justify-center py-5 md:py-6 lg:py-7 px-10 w-full max-w-[500px] text-sm whitespace-nowrap md:text-base lg:text-xl rounded-full bg-primary text-white font-bold hover:bg-tertiary"
-                    href="#">
+                    href="#register">
                         Register for manufacturing
                     </a>
 
@@ -50,7 +50,7 @@
                     </p>
                     <a 
                     class="flex items-center justify-center py-5 md:py-6 lg:py-7 px-10 w-full max-w-[500px] text-sm whitespace-nowrap md:text-base lg:text-xl rounded-full bg-secondary text-white font-bold hover:bg-tertiary"
-                    href="#">
+                    href="#register">
                         Register for franchise
                     </a>        
                 </div>
@@ -166,5 +166,101 @@
         
     </section>
     
+    <section id="register" class="w-full flex flex-col justify-center items-center gap-8 py-10 min-h-screen px-5">
+        
+        <div class="py-5">
+            <h1 class=" text-3xl lg:text-4xl text-primary font-bold text-center"> 
+                Register now
+            </h1>
+            <h2 class="text-xl lg:text-3xl mt-2 text-primary font-medium text-center">
+                for manufacturing or franchise
+            </h2>
+        </div>
+        
+
+        <form action="" class="flex flex-col justify-center items-center gap-4 w-full max-w-xl">
+           
+            <input type="text"  
+            class=" flex w-full px-10 bg-secondary/10 py-4 placeholder:text-neutral-600 placeholder:text-lg bg-white rounded-full border-2 border-primary"
+            name="fullname"
+            placeholder="Full name"
+            />
+            
+            <input type="text"  
+            class=" flex w-full px-10 bg-secondary/10 py-4 placeholder:text-neutral-600 placeholder:text-lg bg-white rounded-full border-2 border-primary"
+            name="email"
+            placeholder="Email address"
+            />
+
+            <input type="text"  
+            class=" flex w-full px-10 bg-secondary/10 py-4 placeholder:text-neutral-600 placeholder:text-lg bg-white rounded-full border-2 border-primary"
+            name="phone"
+            placeholder="Phone number"
+            />
+
+            <input type="text"  
+            class=" flex w-full px-10 bg-secondary/10 py-4 placeholder:text-neutral-600 placeholder:text-lg bg-white rounded-full border-2 border-primary"
+            name="city"
+            placeholder="City"
+            />
+            
+            <input type="text"  
+            class=" flex w-full px-10 bg-secondary/10 py-4 placeholder:text-neutral-600 placeholder:text-lg bg-white rounded-full border-2 border-primary"
+            name="message"
+            placeholder="Message"
+            />
+            <input type="submit"  
+            class=" flex px-14 py-3 bg-primary text-white  rounded-full border-2 text-lg font-bold cursor-pointer hover:bg-primary/90 active:scale-95"
+            value="submit"
+            />
+
+        </form>
+    </section>
+
+    <footer class="bg-primary w-full py-16 md:py-10 px-5 flex flex-col gap-10 justify-center items-center"> 
+        <div class="w-full max-w-4xl flex flex-row justify-center items-center flex-wrap gap-10">
+                
+            <span class="flex flex-col px-7 gap-7">
+                        <span class="px-5 py-2 bg-white rounded-full">
+                            <img src="assets/TabibLogo.svg"  class="w-[120px]" alt="logo">
+                        </span>
+
+                        <div class="px-5 gap-2 flex flex-col">
+                            <h3 class="font-bold text-sm text-white text-center md:text-left">
+                                Office address :
+                            </h3>
+                            <p class="text-center md:text-left text-sm font-light text-white">
+                                Flat no. 204,<br/>
+                                Gurudwara Road,<br/>
+                                Lodhipura, <br/>
+                                Burhanpur (M.P.)
+                            </p>
+                        </div>
+                </span>
+
+                <span class="flex flex-col md:flex-1 justify-center items-center gap-5">
+
+                    <h2 class="w-full text-sm font-semibold text-center text-white">
+                        Our certifications:
+                    </h2>
+
+                    <div class="flex flex-row w-full justify-center items-center gap-5 flex-nowrap">
+                        <img src="assets/GMP.jpg" class="rounded-full w-[75px] md:w-[100px]"  alt="GMP" />
+                        <img src="assets/ISO.webp" class="rounded-full w-[75px] md:w-[100px]"  alt="ISO" />
+                        <img src="assets/FSSAI.png" class=" h-[50px] md:h-[80px]"  alt="fssai" />
+
+                    </div>
+
+                </span>
+     
+     
+            </div>
+
+        <p class="text-white text-base font-light text-center w-full pt-10">
+            copyright Ⓒ 2025, Tabib Herbs Helthcare  
+        </p>
+    </footer>
+
+
 </body>
 </html>
