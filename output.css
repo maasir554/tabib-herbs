@@ -620,6 +620,14 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.aspect-auto{
+  aspect-ratio: auto;
+}
+
+.aspect-\[0\.83125\]{
+  aspect-ratio: 0.83125;
+}
+
 .h-1{
   height: 0.25rem;
 }
@@ -650,6 +658,10 @@ video {
 
 .h-auto{
   height: auto;
+}
+
+.h-dvh{
+  height: 100dvh;
 }
 
 .h-full{
@@ -1188,6 +1200,10 @@ body{
 @media (min-width: 640px){
   .sm\:w-3{
     width: 0.75rem;
+  }
+
+  .sm\:w-\[400px\]{
+    width: 400px;
   }
 
   .sm\:gap-3{
